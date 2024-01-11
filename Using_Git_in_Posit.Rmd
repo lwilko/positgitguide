@@ -1,0 +1,94 @@
+---
+title: "Using Git in Posit"
+author: "Levin Wilkinson"
+date: "2024-01-11"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+This is a work in progress - I am developing a small guide to using Git in Posit
+as I've had a few questions about it in the past!
+
+Please note: this does not include any info about initially setting up (or
+cloning) your repo. Please make sure that you have a local copy of the repo and
+that the remote is set up properly by typing `git remote -v` into the Terminal
+(Alt+Shift+M). This should give you the URL that you used to set up the repo.
+
+
+## Frequently Asked Questions
+
+### What is version control?
+Version control is a method of saving and storing different versions of files.
+This is very useful for coding as it allows us to see who else is working on a
+script, track all changes and (most importantly!) revert the code to a previous
+version if it is changed or deleted!
+
+### Git vs. GitHub vs. Gitea
+These three words are often used to mean the same thing at PHS, but they are all
+different things:
+
+* [Git](https://en.wikipedia.org/wiki/Git) is a version control system
+* [GitHub](https://github.com/) is a public website for hosting code
+* [Gitea](https://about.gitea.com/) is a private platform (like Posit Workbench)
+for hosting more sensitive code and information
+
+### What are shell git commands?
+Hopefully, something you won't need!
+
+Shell commands are commands that you can enter into the Terminal (Alt+Shift+M).
+There are Terminal commands for everything that you can do with the Posit
+interface, but there are more specific commands that you can use if things go
+wrong to reset your code or merge converging branches.
+
+Included in this document (will be) all the commands that are equivalent to
+things done with the Posit interface, as well as some links to further reading
+for debugging and fixing problems!
+
+
+## Workflow
+
+<!-- Add a picture in here with a diagram of the workflow -->
+
+When you use Git, the recommended workflow is 
+1. Pull the remote repo
+2. Check out the branch you are working on
+3. Change the contents of the repository (make changes)
+ Commit and push when you have made a change and the code runs as intendeaMd
+(if you are working on a large task, try to commit small milestones)
+
+Also try to commit and push at the end of a workday (just in case Posit is being
+dodgy!)
+
+
+## Steps {.tabset}
+
+### 1. Pull from remote
+
+The first thing you will need to do is pull from the remote repository.
+This means taking the latest version of the code from Gitea/GitHub (with any new
+changes by other people included). 
+
+The command line (Terminal) equivalent to this section is `git pull`.
+
+
+### 2. Check out
+
+The command line (Terminal) equivalent to this section is `git checkout [branch]`
+where `[branch]` is the name of your branch.
+
+### 3. Work and push changes
+
+The command line (Terminal) equivalents to this section are:
+
+* `git add -A` to add all files changed or `git add [filepath 1] [filepath 2]`
+to add specific files
+* `git commit -m [commit message]` where `[commit message]` is a description of
+your changes (e.g. `git commit -m "Fix incorrect header"`) to commit your
+changes
+* `git push` to synchronise your changes with the remote (the database of the
+code visible to others on GitHub/Gitea)
