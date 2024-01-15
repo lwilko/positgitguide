@@ -18,8 +18,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 ## Introduction
-
-### About
 ___
 
 This is a work in progress - I am developing a small guide to using Git in Posit
@@ -83,9 +81,9 @@ dodgy!)
 
 
 
-## Steps {.tabset}
+### Steps
 
-### 1. Pull from remote
+#### 1. Pull from remote
 
 The first thing you will need to do is pull from the remote repository.
 This means taking the latest version of the code from Gitea/GitHub (with any new
@@ -98,7 +96,7 @@ Click the button shown below to pull from the remote repo.
 The command line (Terminal) equivalent to this section is `git pull`.
 
 
-### 2. Check out
+#### 2. Check out
 
 Now we need to ensure we are working on the correct branch. Click the branch
 name in the top-right corner of the Git tab (this will probably say main or
@@ -114,9 +112,9 @@ The command line (Terminal) equivalent to this section is `git checkout [branch]
 where `[branch]` is the name of your branch.
 
 
-### 3. Work and push changes
+#### 3. Work and push changes
 
->  Please note that the Git tick-box interface is extremely slow. Click once and
+Please note that the Git tick-box interface is extremely slow. Click once and
 then wait to see if it responds!
 
 As you work and change files in the repository, they will appear in the Git tab.
@@ -129,7 +127,7 @@ To see a summary of the changes you are about to make, click the Diff button
 (circled in red above).
 
 
-#### The Review Changes window
+##### The Review Changes window
 
 ![](/PHI_conf/SubstanceMisuse1/Topics/Naloxone/Publications/AnnualReport/20240220/Temp/LW/screenshot_diff_window.png "Diff highlighted in Git tab")
 
@@ -153,8 +151,6 @@ and click the Commit button to commit your changes, and click the Push button to
 push the changes.
 
 
-#### Terminal commands
-
 The command line (Terminal) equivalents to this section are:
 
 * `git add -A` to add all files changed or `git add [filepath 1] [filepath 2]`
@@ -165,6 +161,13 @@ changes
 * `git push` to synchronise your changes with the remote (the database of the
 code visible to others on GitHub/Gitea)
 
+
+
+##### Logging in
+
+At this point, you may be prompted to enter your GitHub/Gitea credentials. I
+won't go into too much detail here, but be sure to use your [passkey](https://docs.github.com/en/authentication/authenticating-with-a-passkey/about-passkeys)
+in the password box, not your password for the website itself.
 
 
 ## Debugging
