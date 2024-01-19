@@ -145,6 +145,8 @@ Gitea/GitHub.
 tracked from now on.
 * Red D: this file is being deleted in this commit and will no longer be tracked
 or included.
+* Purple M: this file has been moved (the original and new locations will be
+shown)
 
 Enter a commit message (a short note of what you changed, eg. Remove old script)
 and click the Commit button to commit your changes, and click the Push button to
@@ -186,3 +188,9 @@ there is a .Rproj file in the directory and open it)
 * Your Posit working directory should be the home directory (run `getwd()` in
 Console)
 
+
+## Handy Git Terminal commands
+
+* `git status` to check whether files have been modified/added for a commit
+* `git diff [filename]` to see what modifications have been made to a given file
+since the last commit
