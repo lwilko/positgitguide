@@ -91,7 +91,7 @@ changes by other people included).
 
 Click the button shown below to pull from the remote repo.
 
-![](/PHI_conf/SubstanceMisuse1/Topics/Naloxone/Publications/AnnualReport/20240220/Temp/LW/screenshot_pull.png "Pull button highlighted on Git tab")
+![](images/screenshot_pull.png "Pull button highlighted on Git tab")
 
 The command line (Terminal) equivalent to this section is `git pull`.
 
@@ -121,7 +121,7 @@ As you work and change files in the repository, they will appear in the Git tab.
 You can choose which of these files to "save over" by clicking their tick boxes
 (under Staged).
 
-![](/PHI_conf/SubstanceMisuse1/Topics/Naloxone/Publications/AnnualReport/20240220/Temp/LW/screenshot_diff.png "Diff highlighted in Git tab")
+![](images/screenshot_diff.png "Diff highlighted in Git tab")
 
 To see a summary of the changes you are about to make, click the Diff button
 (circled in red above).
@@ -129,7 +129,7 @@ To see a summary of the changes you are about to make, click the Diff button
 
 ##### The Review Changes window
 
-![](/PHI_conf/SubstanceMisuse1/Topics/Naloxone/Publications/AnnualReport/20240220/Temp/LW/screenshot_diff_window.png "Diff highlighted in Git tab")
+![](images/screenshot_diff_window.png "Diff highlighted in Git tab")
 
 This window summarises the changes in each file since the last commit. The
 coloured letters next to the files explain their status:
@@ -176,7 +176,7 @@ in the password box, not your password for the website itself.
 
 #### Why can't I see the Git tab on the top right window of Posit?
 
-![](/PHI_conf/SubstanceMisuse1/Topics/Naloxone/Publications/AnnualReport/20240220/Temp/LW/screenshot.png "Git tab")
+![](images/screenshot.png "Git tab")
 
 If you can't see the Git tab in the top-right window of the screen (shown
 above), check the following:
